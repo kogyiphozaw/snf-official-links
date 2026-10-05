@@ -193,7 +193,6 @@
         /* Donor Tag Styling */
         .donor-box {
             border-top: 1px dashed rgba(255, 215, 0, 0.3);
-            padding-top: 0.75rem;
             font-size: 0.83rem;
             color: #fef08a;
             line-height: 1.5;
@@ -400,6 +399,119 @@
             box-shadow: 0 6px 16px rgba(34, 158, 217, 0.4);
         }
 
+        /* Dhamma Desana Drop-down Card Styling */
+        .dhamma-desana-card {
+            width: 100%;
+            background: rgba(30, 27, 75, 0.75);
+            border: 1px solid rgba(245, 158, 11, 0.35);
+            border-radius: 20px;
+            margin-bottom: 1.75rem;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .dhamma-desana-header {
+            background: linear-gradient(135deg, rgba(139, 21, 21, 0.85), rgba(179, 0, 0, 0.85));
+            padding: 1.2rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .dhamma-desana-header h3 {
+            font-size: 0.88rem;
+            font-weight: 400;
+            color: #e2e8f0;
+            line-height: 1.5;
+            margin-bottom: 6px;
+        }
+
+        .dhamma-desana-header h2 {
+            font-size: 1.05rem;
+            color: #ffd700;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .dhamma-desana-header p {
+            font-size: 0.8rem;
+            color: #f1f5f9;
+            opacity: 0.9;
+        }
+
+        .dhamma-details {
+            border: none;
+        }
+
+        .dhamma-summary {
+            background-color: rgba(245, 158, 11, 0.1);
+            padding: 1rem 1.25rem;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 0.98rem;
+            color: #fef08a;
+            border-top: 1px solid rgba(255, 215, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            list-style: none;
+            transition: background-color 0.25s ease;
+        }
+
+        .dhamma-summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .dhamma-summary::after {
+            content: '▼';
+            font-size: 0.75rem;
+            color: #ffd700;
+            transition: transform 0.3s ease;
+            margin-left: 0.5rem;
+        }
+
+        .dhamma-details[open] .dhamma-summary::after {
+            transform: rotate(180deg);
+        }
+
+        .dhamma-summary:hover {
+            background-color: rgba(245, 158, 11, 0.2);
+        }
+
+        .dhamma-content {
+            padding: 1.25rem;
+            background-color: rgba(15, 23, 42, 0.6);
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .dhamma-content p {
+            margin-bottom: 0.8rem;
+            text-align: justify;
+        }
+
+        .dhamma-point {
+            background-color: rgba(255, 255, 255, 0.04);
+            border-left: 3px solid #f59e0b;
+            padding: 0.8rem 1rem;
+            margin: 1rem 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .dhamma-point-title {
+            font-weight: 700;
+            color: #fbbf24;
+            margin-bottom: 0.4rem;
+        }
+
+        .pali-text {
+            color: #ffd700;
+            font-weight: 600;
+        }
+
         /* Links Section */
         .links-container {
             width: 100%;
@@ -552,7 +664,7 @@
                 </div>
                 <div class="rule-item">
                     <span class="rule-num">(၄)</span>
-                    <span>(၅)မိနစ် (၁၀)မိနစ် (၁၅)မိနစ် (၃၀)မိနစ် အဆင့်ဆင့် အာနာပါန အခြေခံ လေ့ကျင့်ပေးမည် ဖြစ်ပါသောကြောင့် ကျေးဇူးတော်ရှင်အောင်လံဆရာတော်ဘုရားကြီး၏ ကျင့်စဉ်နည်းဖြင့် တိုက်ခွဲအမှတ်(၃၂) သဲအင်းဂူ ဓမ္မရိပ်သာများ၊ ဩဝါဒခံရိပ်သာများ၊ အဖွဲ့ခွဲ လေ့ကျင့်ရေးများနှင့် Online လေ့ကျင့်ရေးစခန်းများတွင် မလေ့ကျင့်ရသေးသော ယောဂီသစ်များကိုသာ လက်ခံပါမည်။ (ကျင့်ဖူးသောယောဂီများအား သိရှိပါက ဆက်လက်၍ စခန်းဝင်ခွင့်ပြုမည်မဟုတ်ပါ။)</span>
+                    <span>(၅)မိနစ် (၁၀)မိနစ် (၁၅)မိနစ် (၃၀)မိနစ် အဆင့်ဆင့် အာနာပါန အခြေခံ လေ့ကျင့်ပေးမည် ဖြစ်ပါသဖြင့် ကျေးဇူးတော်ရှင်အောင်လံဆရာတော်ဘုရားကြီး၏ ကျင့်စဉ်နည်းဖြင့် တိုက်ခွဲအမှတ်(၃၂) သဲအင်းဂူ ဓမ္မရိပ်သာများ၊ ဩဝါဒခံရိပ်သာများ၊ အဖွဲ့ခွဲ လေ့ကျင့်ရေးများနှင့် Online လေ့ကျင့်ရေးစခန်းများတွင် မလေ့ကျင့်ရသေးသော ယောဂီသစ်များကိုသာ လက်ခံပါမည်။ (ကျင့်ဖူးသောယောဂီများအား သိရှိပါက ဆက်လက်၍ စခန်းဝင်ခွင့်ပြုမည်မဟုတ်ပါ။)</span>
                 </div>
                 <div class="rule-item">
                     <span class="rule-num">(၅)</span>
@@ -560,11 +672,11 @@
                 </div>
                 <div class="rule-item">
                     <span class="rule-num">(၆)</span>
-                    <span>လစဉ် Online နှင့် On Site လေ့ကျင့်ရေးစခန်းများ ဆက်လျက်ဝင်ရောက် လေ့ကျင့်နိုင်ရမည်။ အာနာပါနကျင့်စဉ် Level-1B (တစ်နာရီ) အောင်မြင်ပါက ရိပ်သာကြီး၌ (၅)ရက်စခန်းဝင်ရမည်။</span>
+                    <span>လစဉ် Online နှင့် On Site လေ့ကျင့်ရေးစခန်းများ ဆက်လက်ဝင်ရောက် လေ့ကျင့်နိုင်ရမည်။ အာနာပါနကျင့်စဉ် Level-1B (တစ်နာရီ) အောင်မြင်ပါက ရိပ်သာကြီး၌ (၅)ရက်စခန်းဝင်ရမည်။</span>
                 </div>
                 <div class="rule-item">
                     <span class="rule-num">(၇)</span>
-                    <span>SNF ပြည်တွင်းပြည်ပသာသနာပြုအဖွဲ့ ဖြင့် အာနာပါနကျင့်စဉ် Level-2 (နှစ်နာရီ) အောင်မြင်သည်အထိ ဆက်လျှက်လေ့ကျင့်ရမည်ဖြစ်ပြီး အောင်မြင်ပါက ရိပ်သာကြီးတွင် ကိုယ်သာနာ၍စိတ်မှာဆင်းရဲခြင်းကင်းသည့် ကျင့်စဉ်အဆင့်ဆင့်အထိ ဆက်လျှက်ကျင့်ခွင့်ရရှိပါမည်။</span>
+                    <span>SNF ပြည်တွင်းပြည်ပသာသနာပြုအဖွဲ့ဖြင့် အာနာပါနကျင့်စဉ် Level-2 (နှစ်နာရီ) အောင်မြင်သည်အထိ ဆက်လက်လေ့ကျင့်ရမည်ဖြစ်ပြီး အောင်မြင်ပါက ရိပ်သာကြီးတွင် ကိုယ်သာနာ၍စိတ်မှာဆင်းရဲခြင်းကင်းသည့် ကျင့်စဉ်အဆင့်ဆင့်အထိ ဆက်လက်ကျင့်ခွင့်ရရှိပါမည်။</span>
                 </div>
             </div>
             <div class="notice-footer-tag">
@@ -578,7 +690,7 @@
                 🙏 Onsite လေ့ကျင့်ရေး တရားစခန်းပွဲ အလှူနှိုးဆော်လွှာ
             </div>
             <div class="donation-subtitle">
-                SNF ပြည်တွင်းပြည်ပသာသနာပြုအဖွဲ့ မှ ကျင်းပသော တရားစခန်းပွဲအတွက် သဒ္ဓါကြည်ဖြူစွာ ပါဝင်လှူဒါန်းနိုင်သော ကုသိုလ်အလှူများ -
+                SNF ပြည်တွင်းပြည်ပသာသနာပြုအဖွဲ့မှ ကျင်းပသော တရားစခန်းပွဲအတွက် သဒ္ဓါကြည်ဖြူစွာ ပါဝင်လှူဒါန်းနိုင်သော ကုသိုလ်အလှူများ -
             </div>
 
             <div class="donation-grid">
@@ -605,12 +717,63 @@
             </div>
 
             <div class="contact-box">
-                <p class="contact-text">သဒ္ဓါကြည်ဖြူစွာဖြင့် ကုသိုလ်ပါဝင် လှူဒါန်းလိုပါက Onsite အလှူတာဝန်ခံ နှင့် ဆက်သွယ် စုံစမ်း၍ လှူဒါန်းနိုင်ပါသည် -</p>
+                <p class="contact-text">သဒ္ဓါကြည်ဖြူစွာဖြင့် ကုသိုလ်ပါဝင် လှူဒါန်းလိုပါက Onsite အလှူတာဝန်ခံနှင့် ဆက်သွယ် စုံစမ်း၍ လှူဒါန်းနိုင်ပါသည် -</p>
                 <div class="contact-person">👤 တရားထောက် ဒေါ်မီမီဇင် <br> ( Onsite အလှူတာဝန်ခံ ) </div>
                 <a href="https://t.me/Me_Me_Zin" class="contact-btn" target="_blank">
                     ✈️ Telegram သို့ ဆက်သွယ်ရန်
                 </a>
             </div>
+        </div>
+
+        <!-- Dhamma Desana Drop-down Card -->
+        <div class="dhamma-desana-card">
+            <div class="dhamma-desana-header">
+                <h3>တိုက်ခွဲအမှတ် (၃၂) သဲအင်းဂူဝိပဿနာ ဓမ္မရိပ်သာ နှင့် သာသနာ့ပျိုးဥယျာဉ်ကျောင်းတိုက် ၏ ဦးစီးပဓါန နာယက ဆရာတော်</h3>
+                <h2>အသျှင်စန္ဒိမာ (အောင်လံ)</h2>
+                <p>(၇၄)နှစ်ပြည့်မွေးနေ့ (၁၃-၅-၂၀၂၆) တွင် ဟောကြားတော်မူသော</p>
+            </div>
+
+            <details class="dhamma-details">
+                <summary class="dhamma-summary">
+                    " လောက၌ အကောင်းဆုံး အမွန်မြတ်ဆုံး အလုပ်သုံးမျိုး တရားတော် "
+                </summary>
+
+                <div class="dhamma-content">
+                    <p>လူ့ဘဝရတဲ့ အချိန် ခဏလေးမှာ <span class="pali-text">"အပ္ပမာဒေန ဘိက္ခဝေ သမ္ပာဒေထ"</span> — မမေ့မလျော့သော သတိဖြင့် နေရမည်လို့ မြတ်စွာဘုရားရှင်က ဟောထားပါတယ်။</p>
+
+                    <p>အဲဒီအထဲမှာ <span class="pali-text">"သဒ္ဓမ္မဿဝနံ အတိဒုလ္လဘံ"</span> — သူတော်ကောင်းတရားကို နာကြားရခြင်းသည် အလွန်ရနိုင်ခဲ၏။</p>
+
+                    <p>အဲဒီ ရနိုင်ခဲတဲ့ သူတော်ကောင်းအဆုံးအမကို မပြတ်ပွားများ အားထုတ်နေရမယ်။</p>
+
+                    <p>လူ့ဘဝဟာ ရခဲလှသည့်အတွက်ကြောင့် မပြုတ်ကျမီ ခဏတာကာလလေးမှာ အကောင်းဆုံး၊ အမွန်မြတ်ဆုံး၊ အထွဋ်အထိပ်ဆုံးဖြစ်တဲ့ အမြတ်ဆုံးအလုပ်ကို လုပ်ကြရပါမယ်။</p>
+
+                    <p>ဦးဇင်းက အကောင်းဆုံးအလုပ်ကိုမှ ကြိုက်တယ်။ တရားဟောပြီဆိုရင်လည်း လောကမှာ ဘာအကောင်းဆုံးလဲလို့ ရွေးတယ်။</p>
+
+                    <p>ယောဂီတို့ မှတ်ထားရမှာက -</p>
+
+                    <div class="dhamma-point">
+                        <div class="dhamma-point-title">နံပါတ် (၁) - မိမိကိုယ်တိုင် တရားအားထုတ်ခြင်းသည် အကောင်းဆုံးဖြစ်သည်။</div>
+                        <p style="margin: 0;">အဲဒီထက်ကောင်းတာ လောကမှာ ဘာမှမရှိဘူး။ အသက်ကိုလှူ အဲလောက်မကောင်းဘူး။ ရွှေတိဂုံဘုရားလို စေတီကြီးတည် အဲလောက်မကောင်းဘူး။ ဘုံဗိမာန်ကြီးတွေ၊ ပြာသာဒ်ကြီးတွေ ကြိုက်သလောက်ဆောက်၊ ရွှေပြားတွေကပ် အဲလောက်မမြတ်ဘူး။</p>
+                        <p style="margin: 8px 0 0 0;">ကိုယ်တိုင်တရားအားထုတ်တာ အမြတ်ဆုံးပဲ။ အဲဒီထက် မြတ်တာ ဘာရှိသေးလဲ။ လောကမှာ ဘာအကောင်းဆုံးလဲလို့ ဦးဇင်း ဆင်ခြင်တယ်။ တစ်ခါတလေ တစ်ဝါတွင်းလုံး ကြာသွားတယ်။ ဘယ်လောက် လူ့ဘဝကြီးက တန်ဖိုးရှိလဲဆိုတာ ဆင်ခြင်တယ်။</p>
+                    </div>
+
+                    <div class="dhamma-point">
+                        <div class="dhamma-point-title">နံပါတ် (၂) - တရားကျင့်ချင်သည့်၊ တရားအားထုတ်ချင်သည့် ပုဂ္ဂိုလ်ကို တရားအားထုတ်ဖို့ တိုက်တွန်းပြီး တရားပြသပေးခြင်းသည် နံပါတ်နှစ် အကောင်းဆုံးဖြစ်သည်။</div>
+                        <p style="margin: 0;">သံသရာဘဝပေါင်း မြောက်မြားစွာ အို နာ သေ ဒုက္ခ၊ အသည်းနာ ခွဲခွာရမည့် လွမ်းခြင်း ဆွေးခြင်း ဒုက္ခ သောကပေါင်း မြောက်မြားစွာမှ လွတ်မြောက်အောင် မဲဆွယ်စည်းရုံးပြီး ကယ်တင်တာ၊ တရားပြတာ အကောင်းဆုံးပဲ။</p>
+                        <p style="margin: 8px 0 0 0;">အသက်ကိုလှူ၊ မျက်လုံးလှူ ကြိုက်တာလှူ အဲလောက်မကောင်းဘူး။ ရွှေတိဂုံလို စေတီတည် လှူတာလည်း တရားပြသည့် အလှူလောက် မကောင်းဘူး။</p>
+                        <p style="margin: 8px 0 0 0;"><span class="pali-text">"သဗ္ဗဒါနံ ဓမ္မဒါနံ ဇိနာတိ"</span> — တရားအလှူသည် အလှူအပေါင်းတို့ထက် မြတ်တယ်။ ဦးဇင်းက အကောင်းဆုံးကိုပဲ ရွေးချယ်လုပ်ပါတယ်။</p>
+                    </div>
+
+                    <div class="dhamma-point">
+                        <div class="dhamma-point-title">နံပါတ် (၃) - ခုလို တရားပြ၊ တရားကျင့်ကြမည့် ပုဂ္ဂိုလ်များ တရားပြနိုင်၊ တရားကျင့်နိုင်အောင် ဓမ္မာရုံကြီးများ ဆောက်လုပ်ပေးခြင်း၊ ဝေယျာဝစ္စ စောင့်ရှောက်ပေးခြင်း၊ ရေ မီး လှူဒါန်းပေးခြင်းနှင့် ဆွမ်း အာဟာရ လှူဒါန်းပေးခြင်းတို့ ဖြစ်သည်။</div>
+                        <p style="margin: 0;">သူတို့မရှိရင် တရားပြ၊ တရားကျင့်ချင်လို့ မရပါဘူး။ အဲဒါ အမြတ်ဆုံးပဲ။ ဦးဇင်းလည်း အဲဒီအလုပ်ပဲ လုပ်တယ်။</p>
+                    </div>
+
+                    <p>လူ့ဘဝမှာ နေရမှာချင်း အတူတူ၊ သေရမှာချင်း အတူတူ၊ အချိန်ဖြုန်းရမှာချင်း အတူတူ အမြတ်ဆုံး အလုပ်ကိုပဲ လုပ်ကြပါ။</p>
+
+                    <p style="margin-bottom: 0;">အဲဒါကြောင့် ယောဂီတို့ကိုလည်း ဦးဇင်းက အမြတ်ဆုံး အလုပ်ကိုပဲ လုပ်စေချင်ပါတယ်။</p>
+                </div>
+            </details>
         </div>
 
         <!-- Links Section -->
